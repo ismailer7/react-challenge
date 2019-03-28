@@ -1,0 +1,124 @@
+.App {
+  font-family: sans-serif;
+}
+body {
+  color: #3a4660;
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+.focus {
+  background-color: dodgerblue;
+  color: white;
+}
+.hide {
+  display: none;
+}
+.hidePaginator {
+  display: none;
+}
+.paginator {
+  width: 100px;
+  margin: 20px auto;
+}
+.card {
+  max-width: 800px;
+  transition: 1s ease;
+}
+.card:hover {
+  background-color: lightgrey;
+  transition: 1s ease;
+}
+.row {
+  margin: 20px;
+}
+.card-img {
+  width: 150px;
+  height: 150px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+.text-muted {
+  padding: 4px;
+}
+.loader {
+  position: absolute;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-100%, 0);
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #3a4660;
+  border-color: #3a4660 transparent #3a4660 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.top {
+  position: fixed;
+  z-index: 1;
+  right: 20px;
+  top: 85%;
+  padding: 10px;
+  background: #3a4660;
+  border: none;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.is-visible {
+  opacity: 1;
+}
+.white-icon {
+  color: white;
+}
+
+.info {
+  border: 1px solid #3a4660;
+  margin-right: 5px;
+}
+.info:hover {
+  cursor: default;
+}
+
+.deleteItem {
+  position: relative;
+  top: 0;
+  left: 100%;
+  width: 30px;
+  height: 30px;
+  margin-left: -30px;
+  background-color: rgb(65, 65, 65);
+  opacity: 0.5;
+  border: none;
+  color: white;
+}
+.pagination a {
+  color: #3a4660;
+  padding: 8px 16px;
+}
+.pagination a:hover {
+  color: #3a4660;
+}
+.pagination a.focus:hover {
+  background-color: dodgerblue;
+  color: #3a4660;
+}
