@@ -77,7 +77,7 @@ ul {
   z-index: 1;
   right: 20px;
   top: 85%;
-  padding: 10px;
+  padding: 12px;
   background: #3a4660;
   border: none;
   border-radius: 3px;
@@ -106,19 +106,20 @@ ul {
   width: 30px;
   height: 30px;
   margin-left: -30px;
-  background-color: rgb(65, 65, 65);
+  background-color: red;
   opacity: 0.5;
   border: none;
-  color: white;
+  color: #fff;
+  font-weight: bold;
 }
-.pagination a {
+.pagination button {
   color: #3a4660;
   padding: 8px 16px;
 }
-.pagination a:hover {
+.pagination a:button {
   color: #3a4660;
 }
-.pagination a.focus:hover {
+.pagination button.focus:hover {
   background-color: dodgerblue;
   color: #3a4660;
 }
