@@ -1,6 +1,6 @@
 React Front-End Challenge.
 
-#HOW TO RUN
+# HOW TO RUN
 
 ### First you need to clone the project into your local machine.
 
