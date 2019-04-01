@@ -113,14 +113,14 @@ class App extends Component {
     if (window.scrollY !== 0) {
       setTimeout(() => {
         window.scrollTo(0, window.scrollY - 30);
-        this.backToTop();
+        this.backToTop(); // call it back until we reach the top
       }, 5);
     }
   };
 
   // delete a repository.
   deleteItem = event => {
-    const index = event.target.dataset.index;
+    const index = event.target.dataset.index; // get the index from data-index
     const copyList = [...this.state.fetchedData];
     copyList.splice(index, 1);
     this.setState({
